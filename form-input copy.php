@@ -1,42 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Wisata Bekasi</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.php">WisataBekasi</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" >Tempat Wisata</a></li>
-                        <li class="nav-item"><a class="nav-link" >Daftar Harga</a></li>
-                        <li class="nav-item"><a class="nav-link" >Pesan Tiket</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- About-->
-        <section class="about-section" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Wisata Bekasi</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <section class="projects-section bg-light" id="pesan_tiket">
+        <div class="container px-4 px-lg-5">
+            
+            <div class="row gx-4 gx-lg-5 justify-content-center">
                 <?php
                 //Include file koneksi, untuk koneksikan ke database
                 include "koneksi.php";
@@ -77,12 +60,12 @@
                 }
                 ?>
                 <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="text-white">Form Pemesanan Tiket</h2>
+                    <h2 class="text-white-1000">Form Pemesanan Tiket</h2>
                     <hr class="divider" />
-                    <p class="text-white mb-5">Udah siap untuk berwisata ke bekasi? Yuk langsung aja isi formnya sesuai dengan data yang sebenar-benarnya ya!</p>
+                    <p class="text-white-500 mb-5">Udah siap untuk berwisata ke bekasi? Yuk langsung aja isi formnya sesuai dengan data yang sebenar-benarnya ya!</p>
                 </div>
             </div>
-            <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>" class="text-white">
+            <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
             <div class="form-group row">
                 <label for="nama_lengkap" class="col-sm-2 col-form-label">Nama Lengkap</label>
                 <div class="col-sm-10">
@@ -146,15 +129,17 @@
             </div>
             <br>
             <div class="form-group row">
-                <label for="harga_tempat" class="col-sm-2 col-form-label">Harga</label>    
-                <div class="col-sm-10" id="harga_tempat">
-
+                <label for="harga_tempat" class="col-sm-2 col-form-label">Harga</label>
+                
+                <div class="col-sm-10">
+                <p id="harga_tempat"></p>
                 </div>
             </div>
             <br>
             <div class="form-group row">
                 <label for="total_bayar" class="col-sm-2 col-form-label">Total Bayar</label>
-                <div class="col-sm-10" id="total_bayar">
+                <div class="col-sm-10">
+                <p id="total_bayar"></p>
                 </div>
             </div>
             <br>
@@ -170,7 +155,7 @@
             </div>
             <br>
             <div class="form-group row">
-                <div class="text-center">
+                <div class="justify-content-center">
                     <a class="btn btn-primary" role="button" onclick="getTotal()">Hitung Total Bayar</a>
                     <button type="submit" name="submit" class="btn btn-primary">Pesan Tiket</button>
                     <a href="index.php" class="btn btn-primary" role="button">Cancel</a>
@@ -178,26 +163,9 @@
             </div>
             </form>
         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <!-- Signup-->
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Anggraini D 2022</div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
-    <script>
+    </section>
+</body>
+<script>
     var kolom_pa = document.getElementById("kolom_pa");
     var kolom_pd = document.getElementById("kolom_pd");
 
@@ -237,5 +205,5 @@
         document.getElementById("total_bayar").innerHTML = total_bayar;
 
     }
-    </script>
+</script>
 </html>

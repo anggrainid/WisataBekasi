@@ -11605,14 +11605,15 @@ body {
 }
 
 .about-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
-  margin-bottom: 10rem;
+  margin-bottom: 0;
 }
-
+.form-container {
+  margin: 10rem;
+  padding: 10rem;
+}
 .projects-section {
   padding: 10rem 0;
 }

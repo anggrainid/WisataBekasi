@@ -40,7 +40,7 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Wisata Bekasi</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Bekasi mempunyai banyak Spot objek wisata yang keren, mulai dari Situs budaya, situs bersejarah, spot foto – foto kekinian, sampai air terjun yang sangat memanjakan mata yang harus segera kalian jelajahi.</h2>
-                        <a class="btn btn-primary" href="#about">Yuk Jelajahi Bekasi</a>
+                        <a class="btn btn-primary" href="#tempat_wisata">Yuk Jelajahi Bekasi</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                 -->
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" width="700px" height="500px" src="assets/img/muara-bening.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><a href="detail-muara_beting.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/muara-bening.jpg" alt="..." /></a></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -93,7 +93,7 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" width="700px" height="500px" src="assets/img/gowet.png" alt="..." /></div>
+                    <div class="col-lg-6"><a href="detail-gowet.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/gowet.png" alt="..." /></a></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -108,7 +108,7 @@
                 </div>
                 <!-- Project Three Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" width="700px" height="500px" src="assets/img/rumah-pohon-jatiasih.jpg" alt="..." /></div>
+                    <div class="col-lg-6"><a href="detail-jatiasih.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/rumah-pohon-jatiasih.jpg" alt="..." /></a></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -150,7 +150,7 @@
                                   <th scope='row'>$no</th>
                                   <td>" . $row['tempat_wisata'] . "</td>
                                   <td>" . $row['jam_buka'] . "</td>
-                                  <td>" . $row['harga'] . "</td>
+                                  <td>" . number_format($row['harga'],2,",",".") . "</td>
                                     </tr></tbody>";
                                         $no++;
                             }
@@ -169,101 +169,9 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="text-white-1000">Form Pemesanan Tiket</h2>
-                        <hr class="divider" />
-                        <p class="text-white-500 mb-5">Udah siap untuk berwisata ke bekasi? Yuk langsung aja isi formnya sesuai dengan data yang sebenar-benarnya ya!</p>
+                        <a href="form-input.php" class="btn btn-primary" role="button">Pesan Tiket</a>
                     </div>
                 </div>
-                <form method="post" action="simpan.php">
-                <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Lengkap</label>
-                    <div class="col-sm-10">
-                    <input type="text" name="nama_lengkap" class="form-control" id="inputEmail3">
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Nomor Identitas</label>
-                    <div class="col-sm-10">
-                    <input type="number" name="id_ktp"class="form-control" id="inputPassword3">
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Nomor HP</label>
-                    <div class="col-sm-10">
-                    <input type="number" name="no_hp"class="form-control" id="inputPassword3">
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <label for="id_buku" class="col-sm-2 col-form-label">Tempat Wisata</label>
-
-                    <div class="col-sm-10">
-                        <select name="tempat_wisata" class="form-control">
-                            <option disabled selected>Pilih Tempat Wisata</option>
-                            <?php
-                            include "koneksi.php";
-                            $daftar = mysqli_query($koneksi, "SELECT * FROM daftar_harga");
-                            foreach ($daftar as $pesan){
-                            ?>
-                                <option value="<?php $pesan['tempat_wisata']?>"> <?php echo $pesan['tempat_wisata'] ?> </option>
-                            <?php
-                            }
-                            ?>
-
-                        </select>
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Tanggal Kunjungan</label>
-                    <div class="col-sm-10">
-                    <input type="date" name="tgl_kunjungan"class="form-control" id="inputPassword3">
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Pengunjung Dewasa</label>
-                    <div class="col-sm-10">
-                    <input type="number" name="pengunjung_dewasa" class="form-control" id="inputPassword3">
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Pengunjung Anak</label>
-                    <div class="col-sm-10">
-                    <input type="number" name="pengunjung_anak" class="form-control" id="inputPassword3">
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Harga</label>
-                    <div class="col-sm-10">
-                    <p></p>
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Total Bayar</label>
-                    <div class="col-sm-10">
-                    <p></p>
-                    </div>
-                </div>
-                <br>
-                <div class="form-group row">
-                    <div class="col">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                        <label class="form-check-label" for="gridCheck1">
-                        Saya dan/atau rombongan telah membaca, memahami, dan setuju berdasarkan syarat dan ketentuan yang telah ditetapkan
-                        </label>
-                    </div>
-                    </div>
-                </div>
-                <br>
-                <button type="submit" class="btn btn-primary btn-sm" value="simpan">Pesan Tiket</button>
-                </form>
             </div>
         </section>
         
