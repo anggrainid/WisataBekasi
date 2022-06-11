@@ -1,2 +1,0 @@
-# WisataBekasi
-Menggunakan Bootstrap

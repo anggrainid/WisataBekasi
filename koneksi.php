@@ -1,9 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = "";
-$database = "wisata_bekasi";
+$pass = "";
+$db   = "dblaundry";
 
-$koneksi = mysqli_connect($host, $user, $password, $database);
-
-?>
+$konek = mysqli_connect($host, $user, $pass, $db) or die("Database MYSQL Tidak Terhubung");

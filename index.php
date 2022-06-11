@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Wisata Bekasi</title>
+        <title>Yuk Laundry!</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,16 +19,16 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">WisataBekasi</a>
+                <a class="navbar-brand" href="#page-top">Beranda</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#tempat_wisata">Tempat Wisata</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#daftar_harga">Daftar Harga</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pesan_tiket">Pesan Tiket</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#daftar_laundry">Daftar Laundry</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cek_ongkir">Cek Ongkir</a></li>
                     </ul>
                 </div>
             </div>
@@ -38,9 +38,9 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Wisata Bekasi</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Bekasi mempunyai banyak Spot objek wisata yang keren, mulai dari Situs budaya, situs bersejarah, spot foto – foto kekinian, sampai air terjun yang sangat memanjakan mata yang harus segera kalian jelajahi.</h2>
-                        <a class="btn btn-primary" href="#tempat_wisata">Yuk Jelajahi Bekasi</a>
+                        <h1 class="mx-auto my-0 text-uppercase">Yuk Laundry</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Website yang menyediakan data-data tempat Laundry di seluruh Indonesia untuk memudahkan kamu mencari Laundry terdekat.</h2>
+                        <a class="btn btn-primary" href="#tempat_wisata">Lihat Daftar Tempat Laundry</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
         </section>
         -->
         <!-- Projects-->
-        <section class="projects-section bg-light" id="tempat_wisata">
+        <section class="projects-section bg-light" id="keunggulan">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
@@ -78,13 +78,13 @@
                 -->
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><a href="detail-muara_beting.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/muara-bening.jpg" alt="..." /></a></div>
+                    <div class="col-lg-6"><a href="detail-muara_beting.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/laundry3.jpg" alt="..." /></a></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Pantai Muara Beting</h4>
-                                    <p class="mb-0 text-white-50">Kota Bekasi, Jawa barat yang dikenal sebagai kota ramai dan macet, ternyata mempunyai sebuah pantai yang memiliki keindahan yang sangat asri. Namanya adalah Pantai Muara Beting yang mempunyai pemandangan pantai sangat menawan.</p>
+                                    <h4 class="text-white">Terbaik</h4>
+                                    <p class="mb-0 text-white-50">Data tempat Laundry terbaik di seluruh Indonesia</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -93,13 +93,13 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><a href="detail-gowet.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/gowet.png" alt="..." /></a></div>
+                    <div class="col-lg-6"><a href="detail-gowet.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/laundry1.jpg" alt="..." /></a></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Go! Wet Waterpark</h4>
-                                    <p class="mb-0 text-white-50">Explore Go! Wet waterpark di Grand Wisata Bekasi. Rasakan pengalaman bermain air bersama teman atau keluarga di berbagai wahana yang ada di Go! Wet.</p>
+                                    <h4 class="text-white">Terbaru</h4>
+                                    <p class="mb-0 text-white-50">Data tempat Laundry selalu diperbaharui.</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -108,13 +108,13 @@
                 </div>
                 <!-- Project Three Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><a href="detail-jatiasih.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/rumah-pohon-jatiasih.jpg" alt="..." /></a></div>
+                    <div class="col-lg-6"><a href="detail-jatiasih.php"><img class="img-fluid" width="700px" height="500px" src="assets/img/laundry2.jpg" alt="..." /></a></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Rumah Pohon Jatiasih</h4>
-                                    <p class="mb-0 text-white-50">Bagi warga Bekasi dan sekitarnya tak perlu pergi berlibur jauh-jauh untuk bisa menikmati wisata alam. Rumah pohon Jatiasih, Bekasi bisa Anda jadikan alternatif destinasi wisata alam yang tepat untuk menghabiskan libur akhir pekan bersama keluarga.</p>
+                                    <h4 class="text-white">Terlengkap</h4>
+                                    <p class="mb-0 text-white-50">Menyediakan data-data tempat Laundry selalu terlengkap.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -124,33 +124,33 @@
             </div>
         </section>
         <!-- Daftar Harga -->
-        <section class="about-section text-center" id="daftar_harga">
+        <section class="about-section text-center" id="daftar_laundry" style="padding-top:5rem; padding-bottom:5rem;">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Daftar Harga</h2>
+                        <h2 class="text-white mb-4">Daftar Tempat Laundry</h2>
                         <p class="text-white-50 mb-4">
-                            Nah, sebelum pergi ke kota Bekasi dan mulai mengunjungi tempat-tempat wisata di Bekasi disarankan terlebih dahulu untuk menyesuaikan budget terlebih dahulu agar liburan berjalan lancar.
+                            Nah, berikut ini daftar tempat laundry di seluruh Indonesia untuk memudahkan kamu mencari tempat laundry terdekat!
                         </p>
                         <table class="table table-bordered">
                             <thead class="text-white-50">
                               <tr>
                                 <th scope="col">No</th>
-                                <th scope="col">Tempat Wisata</th>
-                                <th scope="col">Jam Buka</th>
-                                <th scope="col">Harga</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Alamat</th>
+                                <th scope="col">Telepon</th>
                               </tr>
                             </thead>
                             <?php
                             include "koneksi.php";
-                            $data = mysqli_query($koneksi, "SELECT * FROM daftar_harga");
+                            $data = mysqli_query($konek, "SELECT * FROM tbl_laundry");
                             $no = 1;
                             foreach ($data as $row){
                                 echo "<tbody class='text-white-50'><tr>
                                   <th scope='row'>$no</th>
-                                  <td>" . $row['tempat_wisata'] . "</td>
-                                  <td>" . $row['jam_buka'] . "</td>
-                                  <td>" . number_format($row['harga'],2,",",".") . "</td>
+                                  <td>" . $row['nama'] . "</td>
+                                  <td>" . $row['alamat'] . "</td>
+                                  <td>" . $row['telepon'] . "</td>
                                     </tr></tbody>";
                                         $no++;
                             }
@@ -163,17 +163,18 @@
             </div>
         </section>
 
-        <!-- Form Pemesanan -->
+        <!-- Form Pemesanan
 
-        <section class="projects-section bg-light" id="pesan_tiket">
+        <section class="projects-section bg-light" id="cek_ongkir">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <a href="form-input.php" class="btn btn-primary" role="button">Pesan Tiket</a>
+                        <a href="form-input.php" class="btn btn-primary" role="button">Cek Ongkir</a>
                     </div>
                 </div>
             </div>
         </section>
+         -->
         
         <!-- Signup-->
         <!-- Footer-->
